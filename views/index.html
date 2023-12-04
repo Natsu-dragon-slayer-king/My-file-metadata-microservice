@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>File Metadata Microservice</title>
+	<link rel="stylesheet" href="/public/index.css"/>
+</head>
+<body>
+	<div class="background-outer container">
+	<header>
+		<div class="container">
+		<h1>File Metadata Microservice</h1>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<form enctype="multipart/form-data" action="/file-input" method="post">
+				<h2>Please upload a file with the input below</h2>
+				<label for="file-input" class="sr-only">Input file</label>
+				<input type="file" id="file-input" name="file" multiple required/>
+				<input type="submit" value="Upload chosen file"/>
+			</form>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<p>Challenge: <a title="Try out the challenge for yourself" href="https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/file-metadata-microservice">File Metadata Microservice</a></p>
+			<p>By <a title="Check out Eddie's Replit" href="https://replit.com/@natsuoffairytai">Eddie</a> per <a title="Head over to freeCodeCamp.org" href="https://www.freecodecamp.org">freeCodeCamp.org</a> test</p>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
