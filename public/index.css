@@ -1,0 +1,124 @@
+*{
+	box-sizing:border-box;
+}
+.sr-only,.sr-only-focusable:not(:focus):not(:focus-within){
+	width:1px;
+	height:1px;
+	border:none;
+	clip:rect(0,0,0,0);
+	margin:-1px;
+	padding:0px;
+	position:absolute;
+	overflow:hidden;
+	white-space:nowrap;
+}
+html{
+	background:#03051e;
+	font-family:system-ui;
+	color:#f8ffd4;
+	font-size:clamp(.6rem, 1.5vw, 1rem);
+}
+body{
+	margin:0px;
+	postition:relative;
+}
+h1{
+	text-align:center;
+	margin:0px;
+	font-weight:600;
+	font-size:2.2rem;
+	text-shadow:3px 4px 9px #03051e;
+}
+h2{
+	font-weight:normal;
+	text-align:center;
+	margin:0px;
+	margin-block:.75rem;
+	font-size:1.5rem;
+	text-shadow:3px 4px 9px #03051e;
+}
+p{
+	margin:0px;
+}
+a:link{
+	text-decoration:none;
+	color:#b5e3ff;
+	font-weight:bold;
+}
+a:visited{
+	color:#86ffc2;
+}
+a:hover{
+	color:#03051e;
+}	
+::file-selector-button{
+	all:unset;
+	outline:1px solid #f7ffd4;
+	box-sizing:border-box;
+	background:#f8ffd4;
+	font-weight:bold;
+	border-radius:6px;
+	transition:transform .25s;
+	margin-right:.75rem;
+	color:#03051e;
+	padding:1px;
+	padding-inline:5px;
+	font-size:.8rem;
+}
+::file-selector-button:active{
+	transform:translate(1px,1px);
+}
+::file-selector-button:hover{
+	background:#0d4866;
+	color:#f8ffd4;
+}
+input{
+	font-family:system-ui;
+}
+input[type="file"]{
+	background:#03051e;
+	border-radius:8px;
+	padding:7px;
+	font-size:.85rem;
+	border:2px solid #f8ffd4;
+	font-weight:bold;
+}
+input[type="submit"]{
+	background:#03051e;
+	color:#f8ffd4;
+	border-radius:6px;
+	padding:4px;
+	border:2px solid #f8ffd4;
+	font-size:.85rem;
+	font-weight:bold;
+}
+input[type="submit"]:hover{
+	background:#0d4866;
+}
+.container{
+	max-width:600px;
+	margin-inline:auto;
+	padding-inline:20px;
+}
+.background-outer{
+	background:#0d4866;
+	padding:2.6rem;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	border-radius:2rem;
+	border:3px solid #f8ffd4;
+}
+form{
+
+	display:flex;
+	flex-direction:column;
+	gap:15px;
+	margin-top:.5rem;
+}
+footer{
+	text-align:center;
+	margin-top:2.5rem;
+	font-size:1.1rem;
+}
